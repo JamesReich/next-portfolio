@@ -1,13 +1,7 @@
 
 "use client"
 import {useState} from "react";
-
-import {FrontPageCard} from "@/components/FrontPageCard";
-import ThemeToggle from '@/components/ui/ThemeToggle'
 import Nav from '@/components/Nav'
-import SocialButton from "@/components/SocialButton";
-import Link from 'next/link'
-import Image from 'next/image'
 import React from "react";
 import Gallery from "@/components/Gallery";
 import Lightbox from 'yet-another-react-lightbox'

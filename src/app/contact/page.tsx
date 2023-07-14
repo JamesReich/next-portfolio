@@ -1,9 +1,6 @@
 //@ts-nocheck
 "use client"
 
-import Image from 'next/image'
-import {FrontPageCard} from "@/components/FrontPageCard";
-import ThemeToggle from '@/components/ui/ThemeToggle'
 import Nav from '@/components/Nav'
 import React, { useState, useRef, Suspense } from "react";
 import emailjs from "@emailjs/browser";
