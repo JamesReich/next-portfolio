@@ -10,11 +10,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import React from "react";
 import Gallery from "@/components/Gallery";
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Lightbox from 'yet-another-react-lightbox'
 import "yet-another-react-lightbox/styles.css";
 import { photos, hitNukesPhotos, commisionedArtworkPhotos, boomerTattooPhotos, redrawsPhotos, cloakChatPhotos } from "@/components/Gallery";
@@ -38,40 +33,30 @@ export default function About() {
                         open={index.hitNukes >= 0}
                         index={index.hitNukes}
                         close={() => setIndex({...index, hitNukes: -1})}
-                        // enable optional lightbox plugins
-                        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
                     />
                     <Lightbox
                         slides={commisionedArtworkPhotos}
                         open={index.commissions >= 0}
                         index={index.commissions}
                         close={() => setIndex({...index, commissions: -1})}
-                        // enable optional lightbox plugins
-                        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
                     />
                     <Lightbox
                         slides={boomerTattooPhotos}
                         open={index.boomerTattoo >= 0}
                         index={index.boomerTattoo}
                         close={() => setIndex({...index, boomerTattoo: -1})}
-                        // enable optional lightbox plugins
-                        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
                     />
                     <Lightbox
                         slides={redrawsPhotos}
                         open={index.redraws >= 0}
                         index={index.redraws}
                         close={() => setIndex({...index, redraws: -1})}
-                        // enable optional lightbox plugins
-                        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
                     />
                     <Lightbox
                         slides={cloakChatPhotos}
                         open={index.cloakChat >= 0}
                         index={index.cloakChat}
                         close={() => setIndex({...index, cloakChat: -1})}
-                        // enable optional lightbox plugins
-                        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
                     />
                 </div>
             </main>
