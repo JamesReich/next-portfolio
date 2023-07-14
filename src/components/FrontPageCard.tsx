@@ -49,14 +49,14 @@ export function FrontPageCard() {
                     </CardHeader>
                         <CardContent className="flex flex-col">
                             <p className="p-5 dark:text-zinc-300 text-zinc-900 w-full">
-                                I'm a multi-disciplinary web developer & graphic designer from Reno, Nevada who's
+                                I&apos;m a multi-disciplinary web developer & graphic designer from Reno, Nevada who&apos;s
                                 delivered creative and engaging solutions across brand identity,
                                 print, packaging, and digital media. I work with my clients from
                                 the first step through to the completed product to make sure they
                                 are fully on board with where I am taking them. My passion is my
-                                work, and I'm committed to bringing my clients' visions to life. I
+                                work, and I&apos;m committed to bringing my clients&apos; visions to life. I
                                 Currently work as an expert production artist and freelance web
-                                developer. I have an interest in front-end web development but I'm
+                                developer. I have an interest in front-end web development but I&apos;m
                                 also interested in full-stack development, I love building on both
                                 sides of the browser!
                             </p>
@@ -101,9 +101,9 @@ export function FrontPageCard() {
                     </CardHeader>
                     <CardContent className="flex flex-col">
                         <p className="p-5 dark:text-zinc-300 text-zinc-900 w-full">
-                            As a versatile web developer, I've gained proficiency in a wide range of skills that encompass both front-end and back-end development. These skills have not only been critical in my growth as a developer, but they also enable me to bring diverse and rich functionalities to the web projects I handle.
+                            As a versatile web developer, I&apos;ve gained proficiency in a wide range of skills that encompass both front-end and back-end development. These skills have not only been critical in my growth as a developer, but they also enable me to bring diverse and rich functionalities to the web projects I handle.
 
-                            I've also had the opportunity to work with WordPress and SanityIO, thereby broadening my skills into CMS-based development.
+                            I&apos;ve also had the opportunity to work with WordPress and SanityIO, thereby broadening my skills into CMS-based development.
 
                             All these skills coalesce to form a comprehensive toolset, empowering me to create holistic web solutions that balance functionality, aesthetics, and performance.
                         </p>
@@ -127,7 +127,7 @@ export function FrontPageCard() {
                         </CardContent>
 
                         <CardContent className="flex justify-center my-2">
-                            If you'd like to see these skills in action, check out my projects.
+                            If you&apos;d like to see these skills in action, check out my projects.
                         </CardContent>
 
                         <Button variant="outline" className="mx-auto">

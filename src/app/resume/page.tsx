@@ -24,7 +24,7 @@ export default function Resume() {
             <main className="mt-24">
                 <div className="md:w-3/4 mx-auto my-5 max-w-7xl w-11/12 animate-fade-in-right">
                     <h1 className="font-semibold text-3xl">Resume</h1>
-                    <p>Feel free to check out my resume, and even download it if you'd like.</p>
+                    <p>Feel free to check out my resume, and even download it if you&apos;d like.</p>
                 </div>
                 <div className="container md:w-3/4 w-11/12 mx-auto bg-white dark:bg-zinc-900 p-5 mb-20 rounded border border-black dark:border-white animate-fade-in-left">
                     <h2 className="text-2xl font-bold text-sky-500">James Reich</h2>
@@ -118,7 +118,7 @@ export default function Resume() {
                             apparel and products
                         </p>
                         <p>
-                            • Supported the art and design team's success by maintaining high accuracy in processing high volumes
+                            • Supported the art and design team&apos;s success by maintaining high accuracy in processing high volumes
                             of orders
                         </p>
                         <p>

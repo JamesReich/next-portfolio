@@ -120,7 +120,7 @@ export default function Gallery({index, setIndex}) {
                     <div className="my-10">
                         <AccordionTrigger className="font-bold text-3xl dark:text-white text-black">Commissions</AccordionTrigger>
                         <AccordionContent>
-                            <p className="my-2 text-xl">These are various commissions that don't fit into a specific category. Featured below are a menu design for a local restaurant, various logos, Discord community branding and mock-ups for small business's social media pages. </p>
+                            <p className="my-2 text-xl">These are various commissions that don&apos;t fit into a specific category. Featured below are a menu design for a local restaurant, various logos, Discord community branding and mock-ups for small business&apos;s social media pages. </p>
                             <Separator className="border dark:border-white border-black w-full my-4" />
                             <PhotoAlbum layout="rows" photos={commisionedArtworkPhotos} onClick={({index}) => setIndex('commissions', index)} />
                             <Separator className="border dark:border-white border-black w-full my-4" />
@@ -131,7 +131,7 @@ export default function Gallery({index, setIndex}) {
                     <div className="my-10">
                         <AccordionTrigger className="font-bold text-3xl dark:text-white text-black">Redraws</AccordionTrigger>
                         <AccordionContent>
-                            <p className="my-2 text-xl">These are some of my favorite redraws I've done over the last couple of years. Featuring work I've done for Custom Ink and in my free time. This includes being fully print ready, reducing the amount of colors as much as possible to save customers money all while preserving their original artwork. For example, the two pieces on the left are 4 colors, not including their background color.  </p>
+                            <p className="my-2 text-xl">These are some of my favorite redraws I&apos;ve done over the last couple of years. Featuring work I&apos;ve done for Custom Ink and in my free time. This includes being fully print ready, reducing the amount of colors as much as possible to save customers money all while preserving their original artwork. For example, the two pieces on the left are 4 colors, not including their background color.  </p>
                             <Separator className="border dark:border-white border-black w-full my-4" />
                             <PhotoAlbum layout="rows" photos={redrawsPhotos} onClick={({index}) => setIndex('redraws', index)} />
                             <Separator className="border dark:border-white border-black w-full my-4" />

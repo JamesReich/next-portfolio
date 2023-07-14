@@ -117,7 +117,7 @@ export default function Home() {
                                 <div className="flex flex-col md:flex-row md:justify-between">
                                     <div className="w-full md:w-2/3 flex flex-col m-2 justify-between">
                                         <p className="text-lg">
-                                            Static website for Texas lawyer Stan Hulse. Website includes bootstrap for it's mobile first approach and features a contact form using javascript to validate the response and send it to the appropriate email.
+                                            Static website for Texas lawyer Stan Hulse. Website includes bootstrap for it&apos;s mobile first approach and features a contact form using javascript to validate the response and send it to the appropriate email.
                                         </p>
 
                                         <div className="my-5">
