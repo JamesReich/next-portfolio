@@ -2,7 +2,7 @@
 "use client"
 
 import Nav from '@/components/Nav'
-import React, { useState, useRef, Suspense } from "react";
+import React, { useState, useRef, Suspense, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 // @ts-ignore
 import dynamic from "next/dynamic";
@@ -18,10 +18,15 @@ import { Separator } from "@/components/ui/separator"
 import {Button} from "@/components/ui/button";
 import Footer from "@/components/Footer";
 
+const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'), {
+    ssr: false,
+});
 
 
 
 export default function Contact() {
+    const [shouldRenderRecaptcha, setShouldRenderRecaptcha] = useState(false);
+    const [recaptchaLoaded, setRecaptchaLoaded] = useState(false);
     const [contact, setContact] = useState({
         name: "",
         email: "",
@@ -41,12 +46,13 @@ export default function Contact() {
         setIsMounted(true);
     }, []);
 
-    let ReCAPTCHA;
-
-    if(isMounted) {
-        ReCAPTCHA = dynamic(() => import('react-google-recaptcha'), {
-            ssr: false,
-        });
+    useEffect(() => {
+        if (!recaptchaLoaded) {
+            setRecaptchaLoaded(true);
+        }
+    }, [recaptchaLoaded]);
+    function handleInputBlur() {
+        setShouldRenderRecaptcha(true);
     }
     function handleRecaptchaChange(value: string) {
         setRecaptchaValue(value);
@@ -170,15 +176,16 @@ export default function Contact() {
                                 onChange={(e) =>
                                     setContact({ ...contact, message: e.target.value })
                                 }
+                                onBlur={handleInputBlur}
                             />
-                            { isMounted &&
-                            <Suspense fallback={<div>Loading...</div>}>
-                                <ReCAPTCHA
-                                    className="mb-5 mt-2 mx-auto"
-                                    sitekey="6LeDHp8gAAAAAIMZJUXSOYsrHsoWpZk8KemHeVSk"
-                                    onChange={handleRecaptchaChange}
-                                />
-                            </Suspense>
+                            {recaptchaLoaded && shouldRenderRecaptcha &&
+                                <Suspense fallback={<div>Loading...</div>}>
+                                    <ReCAPTCHA
+                                        className="mb-5 mt-2 mx-auto"
+                                        sitekey="6LeDHp8gAAAAAIMZJUXSOYsrHsoWpZk8KemHeVSk"
+                                        onChange={handleRecaptchaChange}
+                                    />
+                                </Suspense>
                             }
                             <Button
                                 className="mb-10 dark:hover:bg-zinc-950 hover:bg-sky-600 dark:hover:text-white hover:text-white animate-fade-in-left"
