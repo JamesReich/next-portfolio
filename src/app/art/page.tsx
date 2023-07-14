@@ -15,7 +15,7 @@ import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import Lightbox from "yet-another-react-lightbox";
+import Lightbox from 'yet-another-react-lightbox'
 import "yet-another-react-lightbox/styles.css";
 import { photos, hitNukesPhotos, commisionedArtworkPhotos, boomerTattooPhotos, redrawsPhotos, cloakChatPhotos } from "@/components/Gallery";
 import Footer from "@/components/Footer";
