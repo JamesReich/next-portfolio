@@ -44,20 +44,17 @@ export default function Footer() {
                             "
                     >
                         <li>
-                            <Link href="https://github.com/JamesReich" target="_blank">
+                            <Link href="https://github.com/JamesReich" target="_blank" rel="noopener noreferrer" aria-label="James's Github">
                                 <FaGithub className="text-black hover:text-black/60 dark:text-white hover:opacity-60 text-2xl mx-2" />
                             </Link>
                         </li>
                         <li>
-                            <Link href="https://twitter.com/jgreich_" target="_blank">
+                            <Link href="https://twitter.com/jgreich_" target="_blank" rel="noopener noreferrer" aria-label="James's Twitter">
                                 <FaTwitter className="text-black hover:text-black/60 dark:text-white hover:opacity-60 text-2xl mx-2" />
                             </Link>
                         </li>
                         <li>
-                            <Link
-                                href="https://discordapp.com/users/231259227383922689"
-                                target="_blank"
-                            >
+                            <Link href="https://discordapp.com/users/231259227383922689" target="_blank" rel="noopener noreferrer" aria-label="James's Discord">
                                 <FaDiscord className="text-black hover:text-black/60 dark:text-white hover:opacity-60 text-2xl mx-2" />
                             </Link>
                         </li>

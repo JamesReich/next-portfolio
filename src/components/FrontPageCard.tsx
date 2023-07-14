@@ -23,7 +23,7 @@ export function FrontPageCard() {
             <CardHeader>
                 <div className="flex">
                     <Avatar className="mr-2 self-center w-20 h-20">
-                        <AvatarImage src="./images/jreich.png" />
+                        <AvatarImage src="./images/jreich.png" alt="vector drawing on Jimmy Reich" />
                         <AvatarFallback>JR</AvatarFallback>
                     </Avatar>
                     <CardTitle className="self-center">James Reich</CardTitle>
@@ -55,7 +55,7 @@ export function FrontPageCard() {
                                 the first step through to the completed product to make sure they
                                 are fully on board with where I am taking them. My passion is my
                                 work, and I&apos;m committed to bringing my clients&apos; visions to life. I
-                                Currently work as an expert production artist and freelance web
+                                currently work as an expert production artist and freelance web
                                 developer. I have an interest in front-end web development but I&apos;m
                                 also interested in full-stack development, I love building on both
                                 sides of the browser!
@@ -64,31 +64,22 @@ export function FrontPageCard() {
                                 My Socials
                             </CardTitle>
                             <CardContent className="text-zinc-900 dark:text-zinc-300 flex justify-center">
-
-                                <Link href="https://twitter.com/jgreich_" target="_blank">
-                                    <Button
-                                        variant="outline"
-                                        className="mx-3"
-                                    >
+                                <Link href="https://twitter.com/jgreich_" target="_blank" rel="noopener noreferrer" aria-label="James's Twitter">
+                                    <Button variant="outline" className="mx-3">
                                         <FaTwitter className="text-xl" />
                                     </Button>
                                 </Link>
-                                <Link href="https://github.com/JamesReich" target="_blank">
-                                    <Button
-                                        variant="outline"
-                                        className="mx-3"
-                                    >
+                                <Link href="https://github.com/JamesReich" target="_blank" rel="noopener noreferrer" aria-label="James's Github">
+                                    <Button variant="outline" className="mx-3">
                                         <FaGithub className="text-xl" />
                                     </Button>
                                 </Link>
-                                <Link href="https://www.instagram.com/jgreich_/" target="_blank">
-                                    <Button
-                                        variant="outline"
-                                        className="mx-3"
-                                    >
+                                <Link href="https://www.instagram.com/jgreich_/" target="_blank" rel="noopener noreferrer" aria-label="James's Instagram">
+                                    <Button variant="outline" className="mx-3">
                                         <FaInstagram className="text-xl" />
                                     </Button>
                                 </Link>
+
                             </CardContent>
                         </CardContent>
                 </Card>

@@ -60,7 +60,7 @@ export default function Home() {
                                             <li className="text-lg">Web transport instead of web sockets</li>
                                             <li className="text-lg">Text chat</li>
                                             <li className="text-lg">syntax highlighting</li>
-                                            <li className="text-lg">markdown support</li>
+                                            <li className="text-lg">Markdown support</li>
                                             <li className="text-lg">User owned and operated Rooms/Servers</li>
                                             <li className="text-lg">Emoji support</li>
                                             <li className="text-lg">Gif Support</li>
@@ -140,7 +140,6 @@ export default function Home() {
                                             <li className="text-lg">Mobile friendly design</li>
                                             <li className="text-lg">SEO optimized</li>
                                             <li className="text-lg">Accessible</li>
-                                            <li className="text-lg">markdown support</li>
                                             <li className="text-lg">Custom logo</li>
                                         </ul>
                                     </div>

@@ -23,32 +23,36 @@ export function MobileNav() {
 
     return (
         <div className="md:hidden block m-2 relative mb-28 bg-white dark:bg-black">
-            <button className="absolute right-2 top-2" onClick={() => setIsOpen(!isOpen)}>
+            <button
+                className="absolute right-2 top-2"
+                onClick={() => setIsOpen(!isOpen)}
+                aria-label={isOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            >
                 {isOpen ? <X size={24}/> : <Menu size={32} />}
             </button>
             {isOpen && (
-                <ul className="flex flex-col space-y-4 mt-4 w-44 absolute top-4 right-2 z-50 bg-white dark:bg-black p-2 shadow-md shadow-black/30 rounded border border-black/20 dark:border-white">
-                    <li className="dark:hover:bg-zinc-700 hover:bg-zinc-300 p-1 py-2 rounded-md w-full">
+                <ul className="flex flex-col space-y-4 mt-4 w-44 absolute top-4 right-2 z-50 bg-white dark:bg-black p-2 shadow-md shadow-black/30 rounded border border-black/20 dark:border-white" role="menu">
+                    <li className="dark:hover:bg-zinc-700 hover:bg-zinc-300 p-1 py-2 rounded-md w-full" role="menuitem">
                         <Link href="/">
                             <p>Home</p>
                         </Link>
                     </li>
-                    <li className="dark:hover:bg-zinc-700 hover:bg-zinc-300 p-1 py-2 rounded-md w-full">
+                    <li className="dark:hover:bg-zinc-700 hover:bg-zinc-300 p-1 py-2 rounded-md w-full" role="menuitem">
                         <Link href="/projects">
                             <p>Projects</p>
                         </Link>
                     </li>
-                    <li className="dark:hover:bg-zinc-700 hover:bg-zinc-300 p-1 py-2 rounded-md w-full">
+                    <li className="dark:hover:bg-zinc-700 hover:bg-zinc-300 p-1 py-2 rounded-md w-full" role="menuitem">
                         <Link href="/art">
                             <p>Art</p>
                         </Link>
                     </li>
-                    <li className="dark:hover:bg-zinc-700 hover:bg-zinc-300 p-1 py-2 rounded-md w-full">
+                    <li className="dark:hover:bg-zinc-700 hover:bg-zinc-300 p-1 py-2 rounded-md w-full" role="menuitem">
                         <Link href="/resume">
                             <p>Resume</p>
                         </Link>
                     </li>
-                    <li className="dark:hover:bg-zinc-700 hover:bg-zinc-300 p-1 py-2 rounded-md w-full">
+                    <li className="dark:hover:bg-zinc-700 hover:bg-zinc-300 p-1 py-2 rounded-md w-full" role="menuitem">
                         <Link href="/contact">
                             <p>Contact</p>
                         </Link>
