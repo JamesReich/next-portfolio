@@ -55,7 +55,7 @@ export default function Home() {
             <nav className="flex justify-end w-full max-w-7xl mx-auto">
                 <Nav />
             </nav>
-            <main className="max-w-7xl mx-auto mt-20">
+            <main className="max-w-[700px] mx-auto mt-20">
                 <div className="flex flex-col justify-center md:flex-row flex-wrap">
                     <ProjectCard {...cloakChatData} />
                     <ProjectCard {...cloakLiData} />
