@@ -66,17 +66,34 @@ export function FrontPageCard() {
                             <CardContent className="text-zinc-900 dark:text-zinc-300 flex justify-center">
                                 <Link href="https://twitter.com/jgreich_" target="_blank" rel="noopener noreferrer" aria-label="James's Twitter">
                                     <Button variant="outline" className="mx-3">
-                                        <FaTwitter className="text-xl" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                             height="24" fill="none" stroke="currentColor" stroke-linecap="round"
+                                             stroke-linejoin="round" stroke-width="2">
+                                            <path
+                                                d="m19.8 3-6.218 7.105M4.05 21l6.632-7.579m2.901-3.316L9.267 4.013c-.263-.371-.394-.556-.564-.69a1.5 1.5 0 0 0-.506-.262C7.99 3 7.763 3 7.308 3H5.62c-.75 0-1.126 0-1.328.156A.75.75 0 0 0 4 3.72c-.01.255.207.561.64 1.174l6.041 8.527m2.901-3.316 6.376 9.001c.434.613.65.919.64 1.174a.75.75 0 0 1-.291.564c-.203.156-.578.156-1.328.156H17.29c-.455 0-.682 0-.89-.061a1.5 1.5 0 0 1-.505-.262c-.17-.133-.301-.319-.564-.69l-4.651-6.566"/>
+                                        </svg>
                                     </Button>
                                 </Link>
-                                <Link href="https://github.com/JamesReich" target="_blank" rel="noopener noreferrer" aria-label="James's Github">
+                                <Link href="https://github.com/JamesReich" target="_blank" rel="noopener noreferrer"
+                                      aria-label="James's Github">
                                     <Button variant="outline" className="mx-3">
-                                        <FaGithub className="text-xl" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                             height="24" fill="none" stroke="currentColor" stroke-linecap="round"
+                                             stroke-linejoin="round" stroke-width="2">
+                                        <path
+                                                d="M10 15a3.72 3.72 0 0 0-1 2.58V21m5-6a3.72 3.72 0 0 1 1 2.58V21m-6-1.95a5.7 5.7 0 0 1-2.82.36c-1.52-.52-1.12-1.9-1.9-2.47A2.37 2.37 0 0 0 3 16.5m16-6.75c0 3-1.95 5.25-7 5.25s-7-2.25-7-5.25a6.3 6.3 0 0 1 .68-3c-.34-1.47-.21-3.28.52-3.64.73-.36 2.27.3 3.54 1.15a12.86 12.86 0 0 1 2.26-.2 12.86 12.86 0 0 1 2.26.18c1.27-.85 2.88-1.48 3.54-1.15.66.33.86 2.17.52 3.64A6.3 6.3 0 0 1 19 9.75Z"/>
+                                        </svg>
                                     </Button>
                                 </Link>
-                                <Link href="https://www.instagram.com/jgreich_/" target="_blank" rel="noopener noreferrer" aria-label="James's Instagram">
+                                <Link href="https://www.instagram.com/jgreich_/" target="_blank"
+                                      rel="noopener noreferrer" aria-label="James's Instagram">
                                     <Button variant="outline" className="mx-3">
-                                        <FaInstagram className="text-xl" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                             height="24" fill="none" stroke="currentColor" stroke-linecap="round"
+                                             stroke-linejoin="round" stroke-width="2">
+                                        <path d="M17.046 7h.01m-14.01 5c0-2.514 0-3.77.354-4.78a6.3 6.3 0 0 1 3.866-3.866C8.276 3 9.533 3 12.046 3c2.514 0 3.77 0 4.781.354a6.3 6.3 0 0 1 3.866 3.865c.353 1.01.353 2.267.353 4.781s0 3.77-.353 4.78a6.3 6.3 0 0 1-3.866 3.866c-1.01.354-2.267.354-4.78.354-2.514 0-3.771 0-4.781-.354A6.3 6.3 0 0 1 3.4 16.782c-.354-1.01-.354-2.267-.354-4.781Zm12.778-.56a3.819 3.819 0 1 1-7.555 1.12 3.819 3.819 0 0 1 7.555-1.12Z" />
+                                        </svg>
+
                                     </Button>
                                 </Link>
 

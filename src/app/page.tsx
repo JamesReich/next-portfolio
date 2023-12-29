@@ -10,7 +10,7 @@ import React from "react";
 export default function Home() {
   return (
       <>
-          <nav className="flex justify-end w-full max-w-7xl mx-auto">
+          <nav className="flex w-full">
               <Nav />
           </nav>
         <main className="max-w-7xl mx-auto flex flex-col justify-center md:flex-row">
