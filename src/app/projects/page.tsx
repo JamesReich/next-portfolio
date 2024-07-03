@@ -20,9 +20,9 @@ export default function Home() {
         title: 'Cloak Chat',
         description: 'Cloak Chat is a robust, secure and fast text and voice chat application. Still in active development and not yet released. I work as the sole frontend developer on this project along with a backend developer. I am responsible for the entire frontend of the application, including the UI, UX, and the code itself.',
         technologies: ['React', 'React Query', 'Electron', 'TypeScript', 'TailwindCSS', 'Python', 'WebTransport', 'Vite', 'MySQL'],
-        features: ['End-to-end encryption', 'Web transport instead of web sockets', 'Text chat', 'syntax highlighting', 'Markdown support'],
+        features: ['End-to-end encryption', 'Web transport instead of web sockets', 'Text chat', "Video Chat", "Screen Share", 'syntax highlighting', 'Markdown support', "Role-based Permissions"],
         websiteLink: 'https://cloak.chat',
-        imageSrc: '/images/projects/cloak-chat.png',
+        imageSrc: '/images/artwork/layout.png',
         handleImageClick: () => setIsModalOpen(true),
         codeLink: ""
     };
@@ -55,7 +55,7 @@ export default function Home() {
             <nav className="flex justify-end w-full max-w-7xl mx-auto">
                 <Nav />
             </nav>
-            <main className="max-w-[700px] mx-auto mt-20">
+            <main className="w-full max-w-7xl mx-auto mt-20">
                 <div className="flex flex-col justify-center md:flex-row flex-wrap">
                     <ProjectCard {...cloakChatData} />
                     <ProjectCard {...cloakLiData} />
@@ -71,7 +71,7 @@ export default function Home() {
                                 <div className="bg-white dark:bg-black px-4 pt-5 pb-4 sm:p-6 sm:pb-4 w-full">
                                     <div className="sm:flex sm:items-start">
                                         <div className="mt-3 w-full">
-                                            <Image src="/images/projects/cloak-chat.png" alt="A screenshot of Cloak Chat" width={1600} height={900} layout="responsive" />
+                                            <Image src="/images/artwork/video.png" alt="A screenshot of Cloak Chat" width={1600} height={900} layout="responsive" />
                                         </div>
                                     </div>
                                 </div>

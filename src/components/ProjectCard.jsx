@@ -24,7 +24,7 @@ const ProjectCard = ({ title, description, technologies, features, websiteLink, 
             <div className="flex flex-col md:flex-row md:justify-between">
                 <div className="w-full md:w-2/3 flex flex-col m-2 justify-between">
                     <p className="text-lg">{description}</p>
-                    <div className="my-5">
+                    <div className="my-5 space-x-1 space-y-2">
                         <p className="text-lg font-semibold">Technologies used:</p>
                         {technologies.map((tech, index) => (
                             <Pill key={index} className="m-1.5">{tech}</Pill>

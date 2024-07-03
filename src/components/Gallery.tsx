@@ -73,8 +73,14 @@ export const redrawsPhotos = [
 ];
 
 export const cloakChatPhotos = [
-    { src: "/images/artwork/default-blue.png", width: 257, height: 257 },
-    { src: "/images/artwork/github-banner_1.png", width: 1281, height: 641 },
+    { src: "/images/artwork/cloak-logo.png", width: 1094, height: 1094 },
+    { src: "/images/artwork/full-logo-happy.svg", width: 1094, height: 1094 },
+    { src: "/images/artwork/cloak-banner.jpg", width: 1094, height: 1094 },
+    { src: "/images/artwork/cloak-colors.png", width: 2207, height: 2207 },
+    { src: "/images/artwork/FileSharing.png", width: 1182, height: 710 },
+    { src: "/images/artwork/layout.png", width: 1182, height: 710 },
+    { src: "/images/artwork/video.png", width: 1182, height: 710 },
+
 ];
 
 // @ts-ignore
