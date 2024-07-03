@@ -82,7 +82,7 @@ export default function Resume() {
                             apparel and products.
                         </p>
                         <p>
-                            • Supported the art and design team's success by maintaining high accuracy in processing high volumes of
+                            • Supported the art and design team&apos;s success by maintaining high accuracy in processing high volumes of
                             orders.
                         </p>
                         <p>
